@@ -1,0 +1,11 @@
+arr = [45, 12, 78, 34, 23, 80, 10]
+
+n=len(arr)
+
+print("Original array:", arr)
+for i in range(n):
+    for j in range(0, n-i-1):
+        if arr[j] < arr[j+1]:
+            arr[j],arr[j+1] = arr[j+1],arr[j]
+            print("After each pass:", arr)
+print("Sorted array (Descending):", arr)    
